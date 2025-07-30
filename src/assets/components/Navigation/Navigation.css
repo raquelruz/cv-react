@@ -1,0 +1,47 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dont-show-mobile {
+    display: none;
+}
+
+.tab-container {
+    display: flex;
+    gap: 1px;
+}
+
+
+.tab {
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	background-color: transparent;
+	color: var(--text-color);
+}
+
+.tab::after {
+	content: "";
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 0%;
+	background-color: var(--accent-color);
+	transition: width 0.3s ease;
+	border-radius: 2px;
+}
+
+.tab:hover::after,
+.tab.active::after {
+	width: 100%;
+}
+
+.tab:hover,
+.tab.active {
+	color: var(--accent-color);
+	background-color: transparent;
+	border-radius: 0;
+}
