@@ -36,3 +36,51 @@
 	animation: slideUpFade 3.5s ease-in-out infinite;
 	position: relative;
 }
+
+/* RESPONSIVE */
+@media (min-width: 481px) {
+	.home-section {
+		padding: 2rem 3rem;
+	}
+
+	.home-text {
+		font-size: 1.2rem;
+	}
+
+	.main-title {
+		font-weight: 900;
+		font-size: 3rem;
+		line-height: 1.1;
+		margin-bottom: 1.2rem;
+		position: relative;
+		overflow: hidden;
+	}
+}
+
+@media (min-width: 1024px) {
+	.home-section {
+		padding: 2rem 6rem;
+	}
+
+	.home-text {
+		font-size: 1.6rem;
+	}
+
+	.main-title {
+		font-size: 4rem;
+	}
+}
+
+@media (min-width: 1440px) {
+		.home-section {
+		padding: 2rem 8rem;
+	}
+
+	.home-text {
+		font-size: 2rem;
+	}
+
+	.main-title {
+		font-size: 6rem;
+	}
+}

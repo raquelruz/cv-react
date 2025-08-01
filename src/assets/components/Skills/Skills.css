@@ -5,16 +5,11 @@
 .skills-container {
 	padding: 1rem;
 }
-.section-title {
-	font-size: 2rem;
-	margin-bottom: 1.5rem;
-	color: var(--text-color);
-	text-align: center;
-}
 
-h3 {
+.skills-container h3 {
 	margin-top: 2rem;
-	margin-bottom: 1rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
 	color: var(--text-color);
 }
 
@@ -42,4 +37,51 @@ h3 {
 	background-color: var(--contrast-color);
 	box-shadow: 0 4px 10px rgba(190, 147, 4, 0.6);
 	outline: none;
+}
+
+/* RESPONSIVE */
+@media (min-width: 481px) {
+	.skills-section {
+		padding: 0.2rem 2rem;
+	}
+
+	.skill-buttons {
+		gap: 1rem;
+	}
+
+	.skill-btn {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.skills-section {
+		padding: 0.2rem 4rem;
+	}
+
+	.skill-buttons {
+		gap: 1.3rem;
+	}
+
+	.skill-btn {
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.skills-section {
+		padding: 0.2rem 5rem;
+	}
+
+	.skills-container h3 {
+		font-size: 2rem;
+	}
+
+	.skill-buttons {
+		gap: 1.6rem;
+	}
+
+	.skill-btn {
+		font-size: 1.6rem;
+	}
 }
