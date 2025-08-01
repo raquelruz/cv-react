@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Home.css";
+import githubIcon from "../../media/icons/github.png"
+import linkedinIcon from "../../media/icons/linkedin.png"
 
 export const Home = () => {
 	const [index, setIndex] = useState(0);
@@ -29,6 +31,18 @@ export const Home = () => {
 						</span>{" "}
 						a tu visión
 					</h1>
+				</div>
+			</div>
+
+			<div className="social-container">
+				<p className="social-text">Conectemos y creemos algo increíble juntos</p>
+				<div className="social-icons">
+					<a href="https://github.com/raquelruz" target="_blank" rel="noopener noreferrer">
+						<img src={githubIcon} alt="GitHub" className="icon" />
+					</a>
+					<a href="https://linkedin.com/in/raquel-ruiz-lopez" target="_blank" rel="noopener noreferrer">
+						<img src={linkedinIcon} alt="LinkedIn" className="icon" />
+					</a>
 				</div>
 			</div>
 		</section>
