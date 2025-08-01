@@ -7,6 +7,7 @@ import { Experience } from "./assets/components/Experience/Experience";
 import { cvData } from "./assets/data/cvData";
 import { Education } from "./assets/components/Education/Education";
 import { Skills } from "./assets/components/Skills/Skills";
+import { ContactForm } from "./assets/components/ContactForm/ContactForm";
 
 const INITIAL_TAB = Object.keys(Tabs)[0];
 
@@ -32,6 +33,10 @@ export const App = () => {
 
 				<section id="skills-section">
 					<Skills skills={cvData.skills} />
+				</section>
+
+				<section id="contact-section">
+					<ContactForm cvData={cvData}/>
 				</section>
 			</div>
 		</>
