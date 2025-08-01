@@ -89,3 +89,22 @@ button {
 	border-radius: 4px;
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* RESPONSIVE */
+@media (min-width: 481px) {
+	.section-title {
+		font-size: 1.8rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.section-title {
+		font-size: 2.2rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.section-title {
+		font-size: 2.8rem;
+	}
+}
