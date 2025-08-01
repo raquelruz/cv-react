@@ -17,7 +17,7 @@ export const Education = ({ data }) => {
 						<ul className="education-description">
 							{item.description
 								.split("•")
-								.map((point, i) => (point.trim() !== "" ? <li key={i}>{point.trim()}</li> : null))}
+								.map((point, index) => (point.trim() !== "" ? <li key={index}>{point.trim()}</li> : null))}
 						</ul>
 					)}
 				</div>
