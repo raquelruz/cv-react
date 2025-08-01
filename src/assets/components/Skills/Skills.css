@@ -1,0 +1,42 @@
+.skills-section {
+	padding: 0.2rem 2rem;
+}
+
+.section-title {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	color: var(--text-color);
+	text-align: center;
+}
+
+h3 {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	color: var(--text-color);
+}
+
+.skill-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.6rem;
+}
+
+.skill-btn {
+	background-color: var(--accent-color);
+	border: none;
+	border-radius: 20px;
+	padding: 0.5rem 1.2rem;
+	color: var(--text-color);
+	font-size: 0.9rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0 2px 5px var(--contrast-color);
+}
+
+.skill-btn:hover,
+.skill-btn:focus {
+	background-color: var(--contrast-color);
+	box-shadow: 0 4px 10px rgba(190, 147, 4, 0.6);
+	outline: none;
+}
