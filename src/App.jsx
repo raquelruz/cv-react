@@ -36,8 +36,12 @@ export const App = () => {
 				</section>
 
 				<section id="contact-section">
-					<ContactForm cvData={cvData}/>
+					<ContactForm cvData={cvData} />
 				</section>
+
+				<button className="scroll-to-top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+					↑
+				</button>
 			</div>
 		</>
 	);
