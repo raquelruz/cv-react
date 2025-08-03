@@ -8,16 +8,22 @@ import { cvData } from "./assets/data/cvData";
 import { Education } from "./assets/components/Education/Education";
 import { Skills } from "./assets/components/Skills/Skills";
 import { ContactForm } from "./assets/components/ContactForm/ContactForm";
+import { useToggleTheme } from "./assets/components/UseToggleTheme/UseToggleTheme";
 
 const INITIAL_TAB = Object.keys(Tabs)[0];
 
 export const App = () => {
 	const [activeTab, setActiveTab] = useState(INITIAL_TAB);
+	const [darkMode, toggleDarkMode] = useToggleTheme();
 
 	return (
 		<>
 			<div className="app-container">
 				<Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
+
+				<button onClick={toggleDarkMode} className="theme-toggle-btn">
+					{darkMode ? "☀️": "🌙"}
+				</button>
 
 				<section id="home-section">
 					<Home />
