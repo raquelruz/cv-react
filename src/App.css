@@ -1,4 +1,4 @@
-:root[data-theme="light"] {
+:root {
 	--bg-color: #ffffff;
 	--text-color: #333333;
 	--accent-color: #ffd624;
@@ -13,10 +13,10 @@
 :root[data-theme="dark"] {
 	--bg-color: #1e1e1e;
 	--text-color: #f5f5f5;
-	--accent-color: #adff2f;
+	--accent-color: #8bde0e;
 	--contrast-color: #8bde0e;
 	--card-bg: #2c2c2c;
-	--input-bg: #333333;
+	--input-bg: #414040;
 	--gray-color: #f5f5f5;
 	--darkgray-color: #ababab;
 	--tech-btn: #808080;
