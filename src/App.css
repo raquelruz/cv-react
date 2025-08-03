@@ -90,6 +90,26 @@ button {
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.scroll-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	background-color: var(--accent-color);
+	color: white;
+	border: none;
+	border-radius: 50%;
+	padding: 0.2rem 0.7rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: opacity 0.3s ease;
+	z-index: 1000;
+}
+
+.scroll-to-top:hover {
+	background-color: var(--contrast-color);
+}
+
 /* RESPONSIVE */
 @media (min-width: 481px) {
 	.section-title {
