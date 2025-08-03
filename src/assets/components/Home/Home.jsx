@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Home.css";
-import githubIcon from "../../media/icons/github.png"
-import linkedinIcon from "../../media/icons/linkedin.png"
+import githubIcon from "../../media/icons/github.png";
+import linkedinIcon from "../../media/icons/linkedin.png";
+import curriculumVitae from "../../media/curriculum/raquel-ruiz-cv.pdf";
 
 export const Home = () => {
 	const [index, setIndex] = useState(0);
@@ -44,6 +45,11 @@ export const Home = () => {
 						<img src={linkedinIcon} alt="LinkedIn" className="icon" />
 					</a>
 				</div>
+			</div>
+			<div className="download-container">
+				<a href={curriculumVitae} download className="download-cv-button">
+					Descargar CV
+				</a>
 			</div>
 		</section>
 	);

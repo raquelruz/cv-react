@@ -59,6 +59,7 @@
 .social-icons {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	gap: 1.5rem;
 }
 
@@ -70,13 +71,57 @@
 	transition: all 0.3s ease;
 }
 
-.icon:hover {
+.icon:hover,
+.download-cv-button:hover {
 	opacity: 1;
 	filter: grayscale(0%);
 	transform: scale(1.15);
 	cursor: pointer;
 }
 
+.download-container {
+	display: flex;
+	justify-content: center;
+}
+
+.download-cv-button {
+	display: inline-block;
+	padding: 0.7rem 1.5rem;
+	background-color: #000000;
+	color: #fff;
+	border: 2px solid #0f172a;
+	border-radius: 999px;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: all 0.3s ease;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.download-cv-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s ease-in-out;
+	z-index: 0;
+}
+
+.download-cv-button:hover::before {
+	left: 0;
+}
+
+.download-cv-button:hover {
+	color: #fff;
+	border-color: transparent;
+}
+
+.download-cv-button span {
+	position: relative;
+	z-index: 1;
+}
 @keyframes fadeInUp {
 	from {
 		opacity: 0;
