@@ -1,6 +1,5 @@
 .education-section {
 	padding: 1rem 2rem;
-	background-color: #f9f9f9;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -8,7 +7,8 @@
 
 .education-card {
 	width: 100%;
-	background-color: #fff;
+	background: var(--input-bg);
+	border: 1px solid rgba(255, 255, 255, 0.2);
 	border-radius: 1rem;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 	padding: 1.5rem;
@@ -26,7 +26,7 @@
 .education-card h3 {
 	font-size: 1.2rem;
 	text-transform: uppercase;
-	color: #222;
+	color: var(--text-color);
 }
 
 .education-card h4 {
@@ -36,26 +36,26 @@
 	margin-bottom: 0.1rem;
 }
 
-.experience-period {
-	font-size: 0.9rem;
+.education-period {
+	font-size: 0.8rem;
 	color: #999;
 	margin-bottom: 1rem;
 	font-style: italic;
 }
 
-.experience-description {
+.education-description {
+	font-size: 0.9rem;
 	list-style: none;
 	padding-left: 0.1rem;
-	color: #444;
 }
 
-.experience-description li {
+.education-description li {
 	margin-bottom: 0.5rem;
 	position: relative;
 	padding-left: 1rem;
 }
 
-.experience-description li::before {
+.education-description li::before {
 	content: "-";
 	position: absolute;
 	left: 0;
